@@ -10,7 +10,7 @@ namespace CheckoutBL.Internal.DiscountCalculator
 {
     internal class NaiveDiscountCalculator : IDiscountCalculator
     {
-        public decimal CalculateDiscount(Dictionary<string, int> shoppingCart, Dictionary<string, Product> productCatalog, List<IOffer> offers)
+        public decimal CalculateDiscount(Dictionary<string, int> shoppingCart, List<IOffer> offers)
         {
             decimal discount = 0;
             foreach (var offer in offers)
