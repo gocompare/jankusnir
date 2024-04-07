@@ -46,7 +46,7 @@ namespace CheckoutBL.Services
                 }
             }
 
-            decimal discount = _discountCalculator.CalculateDiscount(shoppingCart, _productCatalog, _offers);
+            decimal discount = _discountCalculator.CalculateDiscount(shoppingCart, _offers);
 
             return fullPrice - discount;
         }
