@@ -10,6 +10,6 @@ namespace CheckoutBL.DiscountCalculator
 {
     public interface IDiscountCalculator
     {
-        public decimal CalculateDiscount(Dictionary<string, int> shoppingCart, List<IOffer> offers);
+        public decimal CalculateDiscount(IDictionary<string, int> shoppingCart, IEnumerable<IOffer> offers);
     }
 }

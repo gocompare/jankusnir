@@ -9,6 +9,6 @@ namespace CheckoutBL.Offer
 {
     public interface IOffer
     {
-        public decimal CalculateOfferDiscount(Dictionary<string, int> shoppingCart);
+        public decimal CalculateOfferDiscount(IDictionary<string, int> shoppingCart);
     }
 }

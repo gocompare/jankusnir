@@ -11,11 +11,11 @@ namespace CheckoutBL.Services.CheckoutService
 {
     public class CheckoutService : ICheckoutService
     {
-        private readonly Dictionary<string, Product> _productCatalog;
-        private readonly List<IOffer> _offers;
+        private readonly IDictionary<string, Product> _productCatalog;
+        private readonly IEnumerable<IOffer> _offers;
         private readonly IDiscountCalculator _discountCalculator;
 
-        public CheckoutService(Dictionary<string, Product> productCatalog, List<IOffer> offers, IDiscountCalculator discountCalculator)
+        public CheckoutService(IDictionary<string, Product> productCatalog, IEnumerable<IOffer> offers, IDiscountCalculator discountCalculator)
         {
             _productCatalog = productCatalog;
             _offers = offers;

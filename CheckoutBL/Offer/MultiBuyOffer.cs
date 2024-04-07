@@ -20,7 +20,7 @@ namespace CheckoutBL.Offer
             this.newPrice = newPrice;
         }
 
-        public decimal CalculateOfferDiscount(Dictionary<string, int> shoppingCart)
+        public decimal CalculateOfferDiscount(IDictionary<string, int> shoppingCart)
         {
             int itemsCount = shoppingCart[product.SKU];
             decimal fullPrice = itemsCount * product.Price;
