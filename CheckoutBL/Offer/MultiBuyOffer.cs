@@ -16,6 +16,10 @@ namespace CheckoutBL.Offer
         public MultiBuyOffer(Product product, int requiredCount, decimal newPrice)
         {
             this.product = product;
+            if (requiredCount < 1)
+            {
+                throw new ArgumentOutOfRangeException(nameof(requiredCount), "Number must be 1 or higher");
+            }
             this.requiredCount = requiredCount;
             this.newPrice = newPrice;
         }
