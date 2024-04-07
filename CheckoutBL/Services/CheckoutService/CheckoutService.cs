@@ -1,4 +1,5 @@
-﻿using CheckoutBL.DiscountCalculator;
+﻿using CheckoutBL.DataRepository;
+using CheckoutBL.DiscountCalculator;
 using CheckoutBL.Models;
 using CheckoutBL.Offer;
 using System;
@@ -11,30 +12,30 @@ namespace CheckoutBL.Services.CheckoutService
 {
     public class CheckoutService : ICheckoutService
     {
-        private readonly IDictionary<string, Product> _productCatalog;
-        private readonly IEnumerable<IOffer> _offers;
+        private readonly IDataRepository _dataRepository;
         private readonly IDiscountCalculator _discountCalculator;
 
-        public CheckoutService(IDictionary<string, Product> productCatalog, IEnumerable<IOffer> offers, IDiscountCalculator discountCalculator)
+        public CheckoutService(IDiscountCalculator discountCalculator, IDataRepository dataRepository)
         {
-            _productCatalog = productCatalog;
-            _offers = offers;
+            _dataRepository = dataRepository;
             _discountCalculator = discountCalculator;
         }
 
         public decimal CalculatePrice(string shoppingList)
         {
             var shoppingCart = new Dictionary<string, int>();
+            var productCatalog = _dataRepository.GetProducts();
+            var offers = _dataRepository.GetOffers();
             decimal fullPrice = 0;
 
             foreach (char c in shoppingList)
             {
-                if (!_productCatalog.ContainsKey(c.ToString()))
+                if (!productCatalog.ContainsKey(c.ToString()))
                 {
                     continue;
                 }
 
-                fullPrice += _productCatalog[c.ToString()].Price;
+                fullPrice += productCatalog[c.ToString()].Price;
 
                 if (shoppingCart.ContainsKey(c.ToString()))
                 {
@@ -46,7 +47,7 @@ namespace CheckoutBL.Services.CheckoutService
                 }
             }
 
-            decimal discount = _discountCalculator.CalculateDiscount(shoppingCart, _offers);
+            decimal discount = _discountCalculator.CalculateDiscount(shoppingCart, offers);
 
             return fullPrice - discount;
         }
