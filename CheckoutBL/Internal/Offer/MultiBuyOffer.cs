@@ -20,7 +20,7 @@ namespace CheckoutBL.Internal.Offer
             this.newPrice = newPrice;
         }
 
-        public decimal ApplyOffer(Dictionary<string, int> shoppingCart, Dictionary<string, Product> productCatalog)
+        public decimal ApplyOffer(Dictionary<string, int> shoppingCart)
         {
             int itemsCount = shoppingCart[product.SKU];
             decimal fullPrice = itemsCount * product.Price;
