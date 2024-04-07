@@ -1,14 +1,15 @@
-﻿using CheckoutBL.Models;
+﻿using CheckoutBL.Internal.Offer;
+using CheckoutBL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckoutBL.Internal.Interfaces
+namespace CheckoutBL.Internal.DiscountCalculator
 {
-    internal interface IOfferApplicator
+    internal interface IDiscountCalculator
     {
-        decimal ApplyOffers(Dictionary<string, int> shoppingCart, Dictionary<string, Product> productCatalog, List<IOffer> offers);
+        decimal CalculateDiscount(Dictionary<string, int> shoppingCart, Dictionary<string, Product> productCatalog, List<IOffer> offers);
     }
 }
