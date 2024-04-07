@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutBL.Offer
 {
-    internal class MultiBuyOffer : IOffer
+    public class MultiBuyOffer : IOffer
     {
         private readonly Product product;
         private readonly int requiredCount;

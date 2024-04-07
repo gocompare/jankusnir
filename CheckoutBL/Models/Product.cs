@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutBL.Models
 {
-    internal class Product
+    public class Product
     {
         public required string SKU { get; set; }
         public decimal Price { get; set; }

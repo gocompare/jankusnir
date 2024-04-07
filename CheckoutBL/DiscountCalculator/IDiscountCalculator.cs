@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace CheckoutBL.DiscountCalculator
 {
-    internal interface IDiscountCalculator
+    public interface IDiscountCalculator
     {
-        decimal CalculateDiscount(Dictionary<string, int> shoppingCart, List<IOffer> offers);
+        public decimal CalculateDiscount(Dictionary<string, int> shoppingCart, List<IOffer> offers);
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CheckoutBL.Services.CheckoutService
 {
-    internal class CheckoutService : ICheckoutService
+    public class CheckoutService : ICheckoutService
     {
         private readonly Dictionary<string, Product> _productCatalog;
         private readonly List<IOffer> _offers;

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace CheckoutBL.Offer
 {
-    internal interface IOffer
+    public interface IOffer
     {
-        decimal CalculateOfferDiscount(Dictionary<string, int> shoppingCart);
+        public decimal CalculateOfferDiscount(Dictionary<string, int> shoppingCart);
     }
 }
