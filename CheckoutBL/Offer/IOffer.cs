@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckoutBL.Internal.Offer
+namespace CheckoutBL.Offer
 {
     internal interface IOffer
     {

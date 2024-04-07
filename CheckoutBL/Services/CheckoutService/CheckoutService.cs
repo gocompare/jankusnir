@@ -1,14 +1,13 @@
-﻿using CheckoutBL.Interfaces;
-using CheckoutBL.Internal.DiscountCalculator;
-using CheckoutBL.Internal.Offer;
+﻿using CheckoutBL.DiscountCalculator;
 using CheckoutBL.Models;
+using CheckoutBL.Offer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckoutBL.Services
+namespace CheckoutBL.Services.CheckoutService
 {
     internal class CheckoutService : ICheckoutService
     {
@@ -40,7 +39,8 @@ namespace CheckoutBL.Services
                 if (shoppingCart.ContainsKey(c.ToString()))
                 {
                     shoppingCart[c.ToString()]++;
-                } else
+                }
+                else
                 {
                     shoppingCart[c.ToString()] = 1;
                 }

@@ -1,12 +1,12 @@
-﻿using CheckoutBL.Internal.Offer;
-using CheckoutBL.Models;
+﻿using CheckoutBL.Models;
+using CheckoutBL.Offer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckoutBL.Internal.DiscountCalculator
+namespace CheckoutBL.DiscountCalculator
 {
     internal class NaiveDiscountCalculator : IDiscountCalculator
     {

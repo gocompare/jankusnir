@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutAPI", "CheckoutAPI.csproj", "{7300A119-7F6B-404F-9607-E32642B64B68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutBL", "..\CheckoutBL\CheckoutBL.csproj", "{480166B9-D165-4F3E-A6B4-A07DDD108F5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7300A119-7F6B-404F-9607-E32642B64B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7300A119-7F6B-404F-9607-E32642B64B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7300A119-7F6B-404F-9607-E32642B64B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480166B9-D165-4F3E-A6B4-A07DDD108F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480166B9-D165-4F3E-A6B4-A07DDD108F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480166B9-D165-4F3E-A6B4-A07DDD108F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480166B9-D165-4F3E-A6B4-A07DDD108F5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

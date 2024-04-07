@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckoutBL.Interfaces
+namespace CheckoutBL.Services.CheckoutService
 {
     public interface ICheckoutService
     {
