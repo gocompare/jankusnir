@@ -9,6 +9,6 @@ namespace CheckoutBL.Internal.Offer
 {
     internal interface IOffer
     {
-        decimal ApplyOffer(Dictionary<string, int> shoppingCart);
+        decimal CalculateOfferDiscount(Dictionary<string, int> shoppingCart);
     }
 }
