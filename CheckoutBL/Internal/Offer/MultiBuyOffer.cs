@@ -28,7 +28,7 @@ namespace CheckoutBL.Internal.Offer
             var offersApplied = itemsCount / requiredCount;
             decimal discountedPrice = offersApplied * newPrice + (itemsCount - offersApplied * requiredCount);
 
-            return fullPrice = discountedPrice;
+            return fullPrice - discountedPrice;
         }
     }
 }
