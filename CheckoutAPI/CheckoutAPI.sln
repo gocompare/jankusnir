@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutAPI", "CheckoutAPI.csproj", "{7300A119-7F6B-404F-9607-E32642B64B68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7300A119-7F6B-404F-9607-E32642B64B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7300A119-7F6B-404F-9607-E32642B64B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7300A119-7F6B-404F-9607-E32642B64B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7300A119-7F6B-404F-9607-E32642B64B68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D4A100F-ED30-414D-8200-48AC2CC65B30}
+	EndGlobalSection
+EndGlobal
