@@ -26,7 +26,7 @@ namespace CheckoutBL.Internal.Offer
             decimal fullPrice = itemsCount * product.Price;
 
             var offersApplied = itemsCount / requiredCount;
-            decimal discountedPrice = offersApplied * newPrice + (itemsCount - offersApplied * requiredCount);
+            decimal discountedPrice = offersApplied * newPrice + (itemsCount - offersApplied * requiredCount) * product.Price;
 
             return fullPrice - discountedPrice;
         }
