@@ -26,6 +26,11 @@ namespace CheckoutBL.Offer
 
         public decimal CalculateOfferDiscount(IDictionary<string, int> shoppingCart)
         {
+            if (!shoppingCart.ContainsKey(product.SKU))
+            {
+                return 0;
+            }
+
             int itemsCount = shoppingCart[product.SKU];
             decimal fullPrice = itemsCount * product.Price;
 
