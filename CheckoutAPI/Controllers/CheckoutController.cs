@@ -16,6 +16,11 @@ namespace CheckoutAPI.Controllers
             _checkoutService = checkoutService;
         }
 
+        /// <summary>
+        /// Calculates total price of items provided
+        /// </summary>
+        /// <remarks>Ignores items not present in store</remarks>
+        /// <returns>Returns the total price</returns>
         [HttpPost]
         public IActionResult Post([FromBody] string value)
         {
