@@ -6,3 +6,41 @@ Content-Type: application/json
 "AAB"
 
 ###
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+"AABCDBA"
+
+###
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+"AhebAvehkpm23/5"
+
+###
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+"A"
+
+###
+
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+""
+
+###
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+"..."
+
+###
+
+POST {{CheckoutAPI_HostAddress}}/api/Checkout/
+Content-Type: application/json
+
+ABDOTMXPQM
+
+###
