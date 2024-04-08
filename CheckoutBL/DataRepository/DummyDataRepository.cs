@@ -12,12 +12,11 @@ namespace CheckoutBL.DataRepository
     {
         public IEnumerable<IOffer> GetOffers()
         {
-            var offers = new List<IOffer>
+            return new List<IOffer>
             {
                 new MultiBuyOffer(new Product {SKU = "A", Price = 50}, 3, 130),
                 new MultiBuyOffer(new Product {SKU = "B", Price = 30}, 2, 45)
             };
-            throw new NotImplementedException();
         }
 
         public IDictionary<string, Product> GetProducts()
